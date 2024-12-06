@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', () => {
         // Construct the URL with the country parameter
         let url = 'world.php';
         if (country !== '') {
-            // Append query parameter if input is not empty
+            // adds the country to the query parameter 
             url += '?country=' + encodeURIComponent(country);
         }
 
@@ -19,10 +19,10 @@ document.addEventListener('DOMContentLoaded', () => {
                 if (!response.ok) {
                     throw new Error(`Network response was not OK. Status: ${response.status}`);
                 }
-                return response.text(); // Get the response as text, since PHP returns HTML
+                return response.text(); // Get the response as text
             })
             .then(data => {
-                // Insert the returned HTML into the result div
+                // Insert nto the result div
                 resultDiv.innerHTML = data;
             })
             .catch(error => {
