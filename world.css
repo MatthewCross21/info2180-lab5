@@ -9,7 +9,7 @@ html, body {
 }
 
 header {
-    background: #006d77;
+    background: #0a0077;
     color: #fff;
     padding: 20px;
     text-align: center;
@@ -48,8 +48,14 @@ main {
     border-radius: 4px;
 }
 
-#lookup {
-    background: #006d77;
+.button-container {
+    display: flex;
+    justify-content: center; 
+    gap: 10px;
+}
+
+#lookup, #lookup-cities {
+    background: #0a0077;
     color: #fff;
     border: none;
     padding: 10px 16px;
@@ -58,8 +64,8 @@ main {
     cursor: pointer;
 }
 
-#lookup:hover {
-    background: #005661;
+#lookup:hover, #lookup-cities:hover {
+    background: #0a0077;
 }
 
 #result {
@@ -89,7 +95,7 @@ main {
 #result h2 {
     margin-top: 0;
     font-size: 1.2rem;
-    color: #006d77;
+    color: #0a0077;
 
 
 }
